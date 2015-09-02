@@ -51,7 +51,8 @@ __Parameters__:
 ### Example
 
     // !! Assumes variable videoPath contains a valid system path to a video file on the device
-
+        // * => If for some reason you use fileSystem.root.toURL() to get your path, be careful to remove the "file://" at the begining of your string
+        
     var win = function (fileEntry) {
         console.log(fileEntry);
     }
